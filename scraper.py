@@ -41,7 +41,7 @@ scraper.on(Events.END, on_end)
 
 queries = [
     Query(
-        query='Python',
+        query='Python -civil -water -transportation',
         options=QueryOptions(
             locations=['United States','Tampa'],
             apply_link = True,

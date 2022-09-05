@@ -7,6 +7,8 @@ wordcount = {}
 
 df = pd.read_csv('Job_Postings.csv')
 
+print(df.head())
+
 for text in df['Description']:
     for word in text.lower().split():
         word = word.replace(".","")
@@ -25,5 +27,3 @@ for text in df['Description']:
 word_counter = collections.Counter(wordcount)
 
 ls = word_counter.most_common()
-
-print(ls)
