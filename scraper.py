@@ -32,7 +32,7 @@ scraper = LinkedinScraper(
     chrome_options=None,
     headless=True,
     max_workers=1,
-    slow_mo=1.3,
+    slow_mo=0.5,
     page_load_timeout=20)
 
 scraper.on(Events.DATA, on_data)
