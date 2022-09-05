@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 wordcount = {}
 
-df = pd.
+df = pd.read_csv('Job_Postings.csv')
 
 for text in df['Description']:
     for word in text.lower().split():
